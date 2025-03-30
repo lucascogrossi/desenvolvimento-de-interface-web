@@ -1,13 +1,37 @@
 body {
-    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: white;
+    color:black;
 }
 
-#nome {
+.nome {
     font-weight: bold;
     text-align: center;
     font-size: 24pt;
+    margin-left: auto;
+    margin-right: auto;
+
 }
 
-#socials {
+.socials {
     text-align: center;
 }
+
+ul li {
+    list-style-type:square;
+}
+
+a:link{
+    color:black
+}
+a:visited{
+    color:black;
+}
+a:hover{
+    background-color: none;
+}
+a:active{
+    background-color: black;
+}
+
+
