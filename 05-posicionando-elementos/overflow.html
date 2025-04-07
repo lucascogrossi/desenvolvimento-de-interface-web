@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Overflow</title>
+    <style>
+        .container {
+            border: 2px solid black;
+            padding: 16px;
+            width: 300px;
+            height: 300px;
+            margin-bottom: 16px;
+            background-color: rgba(255, 0, 0, .5);
+        }
+        .item {
+            background-color: darkkhaki;
+            margin-bottom: 10px;
+            padding: 5px;
+        }
+        .fit-content .item {
+            width: fit-content;
+        }
+        /* Largura da maior palavra */
+        .min-content .item {
+            width: min-content;
+        }
+        .max-content .item{
+            width: max-content;
+        }
+        .overflow-hidden {
+            overflow: hidden;
+        }
+        .overflow-scroll {
+            overflow: scroll;
+        }
+        .overflow-auto {
+            overflow: auto;
+        }
+        .overflow-x-hidden {
+            overflow-x: hidden;
+        }
+        .overflow-y-hidden {
+            overflow-y: hidden;
+        }
+        .overflow-visible {
+            overflow: visible;
+        }
+        .overflow-x-scroll {
+            overflow-x: scroll;
+        }
+    </style>
+</head>
+<body>
+    <div class="container fit-content overflow-auto">
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate hic adipisci repellendus commodi assumenda vero deserunt sed, iste veniam, distinctio et quia aliquam id minima molestiae ullam! Voluptas, nulla ex.
+        </div>
+
+        <div class="item">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem, perferendis.
+        </div>
+
+        <div class="item">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga eaque repudiandae reprehenderit numquam dolore, maiores perferendis velit enim dolores sunt.
+        </div>
+
+        <div class="item">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati possimus dolorum pariatur perferendis repudiandae nemo explicabo, inventore est architecto tenetur velit ut? Consectetur eos modi tenetur magni ab iure, omnis ipsum voluptatum iusto dicta necessitatibus quo repudiandae labore ut recusandae alias quae minima vero consequuntur nobis error rem aspernatur totam.
+        </div>
+    </div>
+    <div class="container min-content overflow-hidden">
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate hic adipisci repellendus commodi assumenda vero deserunt sed, iste veniam, distinctio et quia aliquam id minima molestiae ullam! Voluptas, nulla ex.
+        </div>
+
+        <div class="item">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem, perferendis.
+        </div>
+
+        <div class="item">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga eaque repudiandae reprehenderit numquam dolore, maiores perferendis velit enim dolores sunt.
+        </div>
+        
+        <div class="item">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati possimus dolorum pariatur perferendis repudiandae nemo explicabo, inventore est architecto tenetur velit ut? Consectetur eos modi tenetur magni ab iure, omnis ipsum voluptatum iusto dicta necessitatibus quo repudiandae labore ut recusandae alias quae minima vero consequuntur nobis error rem aspernatur totam.
+        </div>
+    </div>
+    <div class="container max-content overflow-x-scroll">
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate hic adipisci repellendus commodi assumenda vero deserunt sed, iste veniam, distinctio et quia aliquam id minima molestiae ullam! Voluptas, nulla ex.
+        </div>
+
+        <div class="item">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem, perferendis.
+        </div>
+
+        <div class="item">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga eaque repudiandae reprehenderit numquam dolore, maiores perferendis velit enim dolores sunt.
+        </div>
+        
+        <div class="item">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati possimus dolorum pariatur perferendis repudiandae nemo explicabo, inventore est architecto tenetur velit ut? Consectetur eos modi tenetur magni ab iure, omnis ipsum voluptatum iusto dicta necessitatibus quo repudiandae labore ut recusandae alias quae minima vero consequuntur nobis error rem aspernatur totam.
+        </div>
+    </div>
+</body>
+</html>
